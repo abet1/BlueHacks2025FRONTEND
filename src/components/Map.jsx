@@ -4,7 +4,7 @@ import axios from 'axios';
 import Popup from './Popup';
 import DonationPopup from './DonationPopup';
 import './Map.css';
-import { backendUrl } from './config.js'; 
+import { backendUrl } from '../config'; 
 
 const Map = ({
   isCallForHelpMode,
