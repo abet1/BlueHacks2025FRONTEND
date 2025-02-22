@@ -1,0 +1,1 @@
+export const backendUrl = 'https://bluehacks2025backend.onrender.com';
