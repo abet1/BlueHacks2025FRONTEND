@@ -4,6 +4,7 @@ import axios from 'axios';
 import Popup from './Popup';
 import DonationPopup from './DonationPopup';
 import './Map.css';
+import { backendUrl } from './config'; 
 
 const Map = ({
   isCallForHelpMode,
@@ -109,7 +110,7 @@ const Map = ({
   
       // Send the disaster data to the backend
       try {
-        const response = await axios.post('http://127.0.0.1:5000/report', {
+        const response = await axios.post(`${backendUrl}/report`, {
           disaster_type: disasterType,
           latitude: markerPosition.lat,
           longitude: markerPosition.lng,
