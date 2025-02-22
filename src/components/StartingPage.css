@@ -1,0 +1,50 @@
+/* src/components/StartingPage.css */
+.starting-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2c3e50; /* Match the Navbar background */
+    color: #ecf0f1; /* Light text for contrast */
+    text-align: center;
+  }
+  
+  .starting-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cards-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: #3498db; /* Slightly lighter than the background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #ecf0f1;
+  }
